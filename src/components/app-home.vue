@@ -12,6 +12,7 @@
             <mainFeatures />
             <stayProductive/>
             <profileCards/>
+            <signUp/>
         </div>
     </section>
 </template>
@@ -20,12 +21,14 @@
 import stayProductive from './stay-productive.vue';
 import profileCards from './profile-cards.vue'
 import mainFeatures from './main-features.vue'
+import signUp from './sign-up.vue';
 export default {
 
     components: {
         stayProductive,
         profileCards,
-        mainFeatures
+        mainFeatures,
+        signUp
     }
 }
 </script>
