@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/homework-pixel-prefect/',
+  base: '/homework-pixel-perfect/',
   plugins: [vue()],
   resolve: {
     alias: {
