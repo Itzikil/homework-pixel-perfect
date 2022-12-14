@@ -8,11 +8,12 @@
     .main-page {
         background-color: #181f2b;
         width: 100%;
+        margin-bottom: -200px;
     }
 
     .page-intro {
         font-size: 20px;
-        max-width: min-content;
+        max-width: min-content !important;
         // background: url('../../svgs/bg-curvy-desktop.svg');
 
         h2 {
@@ -71,6 +72,7 @@
 
     .profile-cards {
         padding-inline: 50px;
+        padding-bottom: 50px;
 
         img {
             max-width: 24px;
@@ -94,19 +96,32 @@
 
     .sign-up {
         background-color: #1b2330;
-        padding: 30px;
+        padding-block: 40px;
         margin-top: 20px;
         text-align: center;
         gap: 20px;
         width: 60%;
+        z-index: 1;
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.25);
+        border-radius: 9px;
+        padding-inline: 100px;
+
+        p {
+            padding-inline: 80px;
+        }
 
         .sign-up-input {
-            height: 50px;
-            gap: 10px;
+            gap: 30px;
+
+            >* {
+                min-height: 50px;
+            }
 
             input {
-                flex: 2;
+                flex: 2.5;
                 border-radius: 40px;
+                outline: none;
+                padding-inline-start: 20px;
             }
 
             button {
@@ -143,6 +158,23 @@
 
         .profile-cards {
             flex-direction: column;
+        }
+
+        .sign-up {
+            padding-inline: 30px;
+            width: 90%;
+
+            .sign-up-input {
+                flex-direction: column;
+                height: auto;
+                gap: 20px;
+            }
+            p{
+                padding-inline: 0;
+            }
+            h2 {
+                font-size: 18px;
+            }
         }
     }
 }

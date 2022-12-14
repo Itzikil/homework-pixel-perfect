@@ -5,9 +5,8 @@
             <div class="footer-nav flex">
                 <div class="flex gap-20 ">
                     <img class="location-img" src="../assets/svgs/icon-location.svg" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ad veniam,
-                        ex numquam harum quod quisquam sed cumque.
-                        Veniam</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                 </div>
                 <div class="flex column gap-20">
                     <div class="flex gap-20 align-center">

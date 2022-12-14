@@ -3,7 +3,8 @@
     font-size: 16px;
     gap: 30px;
     background-color: #0b1524;
-    padding-block: 20px;
+    padding-bottom: 50px;
+    padding-top: 100px;
 
     .logo-img {
         max-width: 176px;
@@ -11,13 +12,18 @@
 
     .footer-nav {
         >* {
-            // flex: 1;
             padding-inline-end: 90px;
+            gap: 10px;
+        }
+
+        p {
+            max-width: 340px;
         }
 
         .location-img {
             width: 13px;
             height: 18px;
+            margin-top: 6px;
         }
 
         .phone-img {
@@ -33,10 +39,26 @@
 }
 
 @media (max-width: 600px) {
-    .footer{
+    .footer {
         padding-inline: 25px;
-        .footer-nav{
+
+        .footer-nav {
             flex-direction: column;
+            gap: 20px;
+
+            >* {
+                padding-inline-end: 0px;
+            }
+
+            >:nth-child(2),
+            >:nth-child(3),
+            >:nth-child(4) {
+                padding-bottom: 30px;
+            }
+
+            >:last-child {
+                align-self: center;
+            }
         }
     }
 }
