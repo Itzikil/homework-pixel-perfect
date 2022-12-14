@@ -92,6 +92,29 @@
         }
     }
 
+    .sign-up {
+        background-color: #1b2330;
+        padding: 30px;
+        margin-top: 20px;
+        text-align: center;
+        gap: 20px;
+        width: 60%;
+
+        .sign-up-input {
+            height: 50px;
+            gap: 10px;
+
+            input {
+                flex: 2;
+                border-radius: 40px;
+            }
+
+            button {
+                flex: 1;
+            }
+        }
+    }
+
     // background: url('./svgs/bg-curvy-desktop.svg');
 }
 
@@ -115,10 +138,10 @@
         .stay-productive {
             flex-direction: column;
             padding-inline: 25px;
-            
-        >:last-child {
-            padding-inline-end: 0;
-        }
+
+            >:last-child {
+                padding-inline-end: 0;
+            }
         }
 
         .profile-cards {
