@@ -1,13 +1,19 @@
 .header {
     font-size: 16px;
     padding-block: 70px;
+
     a:not(:last-child) {
         padding-right: 10px;
     }
 }
 
 @media (max-width: 600px) {
-    .header{
+    .header {
         padding-inline: 25px;
+
+        img {
+            max-width: 80px;
+        }
+
     }
 }

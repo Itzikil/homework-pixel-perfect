@@ -7,7 +7,9 @@
                 Fylo has you covered for all of your file storage needs.</p>
             <p>Security share files and folders with friends, family and colleagues for live collaboration,
                 No email attachments required</p>
-                <p>See how Fylo works <span></span></p>
+                <div>
+                    <p>See how Fylo works <span></span></p>
+                </div>
         </div>
     </section>
 </template>
