@@ -1,0 +1,30 @@
+@import './base.scss';
+@import './helpers.scss';
+@import './typography.scss';
+@import './cmps/home.scss';
+@import './cmps/header.scss';
+@import './cmps/footer.scss';
+
+.app {
+  font-weight: normal;
+  color: white;
+  background-color: #1c2230;
+  // background: url('./svgs/bg-curvy-desktop.svg');
+}
+
+.main-layout>*:not(.full) {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: white;
+  transition: 0.4s;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+}

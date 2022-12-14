@@ -1,0 +1,128 @@
+.home {
+    // flex: 1;
+    align-items: center;
+
+    >* {
+        padding-bottom: 100px;
+    }
+
+    .main-page {
+        background-color: #181f2b;
+        width: 100%;
+    }
+
+    .page-intro {
+        font-size: 20px;
+        max-width: min-content;
+
+        h2 {
+            margin-bottom: 25px;
+        }
+
+        .intro-text {
+            padding-inline: 70px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            width: 280px;
+            height: 56px;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+    }
+
+    .main-features {
+        flex-wrap: wrap;
+
+        .main-feature {
+            max-width: 50%;
+            padding: 100px;
+            align-items: center;
+            text-align: center;
+            gap: 10px;
+
+            h3 {
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            img {
+                max-width: 80px;
+            }
+        }
+    }
+
+    .stay-productive {
+        padding-block-end: 100px;
+
+        >* {
+            flex: 1;
+        }
+
+        >:last-child {
+            padding-inline-end: 200px;
+            gap: 20px;
+        }
+
+        font-size: 16px;
+    }
+
+    .profile-cards {
+        padding-inline: 50px;
+
+        img {
+            max-width: 24px;
+            max-height: 24px;
+            border-radius: 50%;
+            margin-inline-end: 10px;
+            align-self: center;
+        }
+
+        gap: 40px;
+
+        .profile-card {
+            box-shadow: 5px 5px 8px 4px rgba(56, 56, 56, 0.1);
+            border-radius: 4px;
+            background-color: #202a3c;
+            padding: 30px;
+            line-height: 21px;
+            gap: 20px;
+        }
+    }
+
+    // background: url('./svgs/bg-curvy-desktop.svg');
+}
+
+@media (max-width: 600px) {
+
+    // overflow: hid;
+    .home {
+
+        img {
+            max-width: 100%;
+        }
+
+        .main-features {
+            flex-direction: column;
+
+            .main-feature {
+                min-width: 100%;
+            }
+        }
+
+        .stay-productive {
+            flex-direction: column;
+            padding-inline: 25px;
+            
+        >:last-child {
+            padding-inline-end: 0;
+        }
+        }
+
+        .profile-cards {
+            flex-direction: column;
+        }
+    }
+}

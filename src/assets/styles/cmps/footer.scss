@@ -1,0 +1,42 @@
+.footer {
+
+    font-size: 16px;
+    gap: 30px;
+    background-color: #0b1524;
+    padding-block: 20px;
+
+    .logo-img {
+        max-width: 176px;
+    }
+
+    .footer-nav {
+        >* {
+            // flex: 1;
+            padding-inline-end: 90px;
+        }
+
+        .location-img {
+            width: 13px;
+            height: 18px;
+        }
+
+        .phone-img {
+            width: 18px;
+            height: 18px;
+        }
+
+        .email-img {
+            width: 20px;
+            height: 16px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .footer{
+        padding-inline: 25px;
+        .footer-nav{
+            flex-direction: column;
+        }
+    }
+}
