@@ -1,6 +1,7 @@
 <template>
-    <section class="home flex justify-center align-items column full main-layout">
-        <div class="page-intro flex column align-center">
+    <!-- <div class="background"> -->
+        <section class="home flex justify-center align-items column full main-layout">
+            <div class="page-intro flex column align-center">
             <img src="../assets/imgs/illustration-intro.png" alt="">
             <h2 class="text-center">All your files in one secure location, accessible anywhere.</h2>
             <p class="intro-text text-center">Flyo stores all your most important files on one secure location.
@@ -15,6 +16,7 @@
             <signUp/>
         </div>
     </section>
+<!-- </div> -->
 </template>
 
 <script>

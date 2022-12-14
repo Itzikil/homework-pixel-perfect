@@ -8,13 +8,13 @@
     .main-page {
         background-color: #181f2b;
         width: 100%;
-        margin-bottom: -200px;
+        margin-bottom: -220px;
     }
-
+    
     .page-intro {
         font-size: 20px;
         max-width: min-content !important;
-        // background: url('../../svgs/bg-curvy-desktop.svg');
+        background: url('@/assets/svgs/bg-curvy-desktop.svg') center / contain no-repeat;
 
         h2 {
             margin-bottom: 25px;
@@ -36,10 +36,11 @@
 
     .main-features {
         flex-wrap: wrap;
-
+        padding-block-end: 150px;
         .main-feature {
             max-width: 50%;
-            padding: 100px;
+            padding-inline: 100px;
+            padding-block: 50px;
             align-items: center;
             text-align: center;
             gap: 10px;
@@ -57,29 +58,32 @@
 
     .stay-productive {
         padding-block-end: 100px;
+        gap: 40px;
 
         >* {
             flex: 1;
         }
 
         >:last-child {
-            padding-inline-end: 200px;
             gap: 20px;
         }
 
-        div>:last-child {
+        .see-how-anchor {
             border-bottom: #62e0d9 solid 1px;
             color: #62e0d9;
             max-width: fit-content;
             cursor: pointer;
             position: relative;
+            padding-inline-end: 20px;
 
-            ::after {
-                content: '';
+            p::after {
+                content: "";
                 position: absolute;
-                right: 0;
-                top: 0;
-                background: url('@/assets/svgs/icon-arrow.svg');
+                right: -20px;
+                top: 9px;
+                width: 12px;
+                height: 12px;
+                background: url('@/assets/svgs/icon-arrow.svg') center / contain no-repeat;
             }
         }
 
@@ -88,7 +92,7 @@
 
     .profile-cards {
         padding-inline: 50px;
-        padding-bottom: 50px;
+        padding-bottom: 150px;
 
         img {
             max-width: 24px;
@@ -99,7 +103,20 @@
         }
 
         gap: 40px;
-
+        .profile-card:first-child{
+            position: relative;
+            // background-color: #202a3c;
+            
+            &::before {
+                content: "";
+                position: absolute;
+                left: -14px;
+                top: -30px;
+                width: 45px;
+                height: 50px;
+                background: url('@/assets/imgs/bg-quotes.png') center / contain no-repeat;
+            }
+        }
         .profile-card {
             box-shadow: 5px 5px 8px 4px rgba(56, 56, 56, 0.1);
             border-radius: 4px;
@@ -150,6 +167,10 @@
 @media (max-width: 600px) {
 
     .home {
+
+        .main-page {
+            margin-bottom: -270px;
+        }
 
         img {
             max-width: 100%;
