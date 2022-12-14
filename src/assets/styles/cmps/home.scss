@@ -5,12 +5,12 @@
         padding-bottom: 100px;
     }
 
+    // background: url('@/assets/svgs/background-curve.svg') center / contain no-repeat;
     .main-page {
         background-color: #181f2b;
         width: 100%;
-        margin-bottom: -220px;
     }
-    
+
     .page-intro {
         font-size: 20px;
         max-width: min-content !important;
@@ -37,6 +37,7 @@
     .main-features {
         flex-wrap: wrap;
         padding-block-end: 150px;
+
         .main-feature {
             max-width: 50%;
             padding-inline: 100px;
@@ -92,7 +93,7 @@
 
     .profile-cards {
         padding-inline: 50px;
-        padding-bottom: 150px;
+        // padding-bottom: 150px;
 
         img {
             max-width: 24px;
@@ -103,10 +104,11 @@
         }
 
         gap: 40px;
-        .profile-card:first-child{
+
+        .profile-card:first-child {
             position: relative;
             // background-color: #202a3c;
-            
+
             &::before {
                 content: "";
                 position: absolute;
@@ -117,6 +119,7 @@
                 background: url('@/assets/imgs/bg-quotes.png') center / contain no-repeat;
             }
         }
+
         .profile-card {
             box-shadow: 5px 5px 8px 4px rgba(56, 56, 56, 0.1);
             border-radius: 4px;
@@ -142,6 +145,8 @@
         p {
             padding-inline: 80px;
         }
+
+        transform: translateY(220px);
 
         .sign-up-input {
             gap: 30px;
@@ -169,7 +174,7 @@
     .home {
 
         .main-page {
-            margin-bottom: -270px;
+            // margin-bottom: -270px;
         }
 
         img {
@@ -218,6 +223,8 @@
         .sign-up {
             padding-inline: 30px;
             width: 90%;
+            transform: translateY(270px);
+
 
             .sign-up-input {
                 flex-direction: column;
