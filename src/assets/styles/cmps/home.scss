@@ -1,5 +1,4 @@
 .home {
-    // flex: 1;
     align-items: center;
 
     >* {
@@ -14,6 +13,7 @@
     .page-intro {
         font-size: 20px;
         max-width: min-content;
+        // background: url('../../svgs/bg-curvy-desktop.svg');
 
         h2 {
             margin-bottom: 25px;
@@ -114,13 +114,10 @@
             }
         }
     }
-
-    // background: url('./svgs/bg-curvy-desktop.svg');
 }
 
 @media (max-width: 600px) {
 
-    // overflow: hid;
     .home {
 
         img {
