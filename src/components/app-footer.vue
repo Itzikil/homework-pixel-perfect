@@ -30,9 +30,9 @@
                     <a href="">Privacy</a>
                 </div>
                 <div class="flex">
-                    <a href="">fa </a>
-                    <a href="">twi</a>
-                    <a href="">ins</a>
+                    <a href=""><i class="fa fa-twitter icon" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-facebook icon" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-instagram icon" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>

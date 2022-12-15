@@ -38,3 +38,16 @@
 .bold{
     font-weight: 700;
 }
+
+.icon{
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: 11px;
+
+    &.fa-facebook  {
+        padding-inline: 14px;
+    }
+    &.fa-instagram{
+        padding-inline: 12px;
+    }
+}

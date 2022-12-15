@@ -16,6 +16,11 @@
             gap: 10px;
         }
 
+        >:nth-child(2),
+        >:nth-child(3) {
+            min-width: max-content;
+        }
+
         p {
             max-width: 340px;
         }
@@ -34,6 +39,33 @@
         .email-img {
             width: 20px;
             height: 16px;
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .footer {
+
+        .footer-nav {
+            gap: 20px;
+
+            >* {
+                padding-inline-end: 0px;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .footer {
+
+        .footer-nav {
+            gap: 20px;
+            flex-wrap: wrap;
+            >* {
+                padding-inline-end: 0px;
+                padding-block-end: 20px;
+            }
         }
     }
 }

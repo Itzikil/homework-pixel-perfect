@@ -8,6 +8,7 @@
                 Access them wherever you need, share and collaborate with
                 friends family, and co-workers</p>
             <button class="btn">Get Started</button>
+            <img class="full curve-img" src="../assets/svgs/bg-curvy-desktop.svg" alt="">
         </div>
         <div class="main-page full main-layout">
             <mainFeatures />
